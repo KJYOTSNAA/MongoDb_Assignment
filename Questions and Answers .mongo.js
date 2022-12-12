@@ -47,7 +47,7 @@ Ans db.rest.find().sort({"name":1});
 
 3) Write a MongoDB query to display the first 5 restaurant in ascending order of name field.
 
-Ans 
+Ans db.rest.find({},{_id:0}).sort({name:1}).limit(5).pretty()
 
 4) Write a MongoDB query to display the next 5 restaurants after skipping first 5.
 
